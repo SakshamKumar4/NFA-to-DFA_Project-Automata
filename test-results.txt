@@ -1,0 +1,75 @@
+ID            Result  Feature / input -> expected | actual
+T01           PASS    Contains 01: hand-worked table (M1 report)
+T02           PASS    Contains 01: exactly four reachable subsets
+T03           PASS    Contains 01: ∅ is unreachable
+T04           PASS    Ordinary branching (ends with 01)
+T05           PASS    Reachable trap: missing transition gives ∅ with self-loops
+T06           PASS    ε-chain with cycle + ε after consuming a symbol
+T07           PASS    Start closure accepting
+T08           PASS    Unreachable NFA state q3 (same table as ends with 01)
+T09           PASS    Unreachable NFA state never appears in a subset
+T10           PASS    Repeated rows merged; same subset found in a different order is one D…
+T11           PASS    Repeated subset: a and b lead to the same DFA state
+T12           PASS    Canonical subset order
+T13           PASS    Third symbol from the end: 2^3 reachable subsets
+T35           PASS    Even a and even b: 4 states, same table as the deterministic machine
+T36           PASS    Even number of 0s
+T14           PASS    ε-closure terminates on a cycle
+T15           PASS    ε-closure follows a chain through a cycle
+T16           PASS    No ε-transitions: closure returns the same set
+T17           PASS    Empty string accepted when start closure is accepting
+T18           PASS    Empty string rejected when start closure is not accepting
+T19           PASS    Empty accepting set: no accepting DFA state
+T20           PASS    Empty accepting set: every string rejected
+T21           PASS    Invalid symbol: NFA and DFA report the SAME error
+T22           PASS    Blank string means ε (one step, step 0 only)
+T23           PASS    Unknown target state
+T24           PASS    Unknown source state
+T25           PASS    Symbol outside the alphabet
+T26           PASS    Unknown start state
+T27           PASS    Unknown accepting state
+T28           PASS    Duplicate alphabet symbol
+T29           PASS    Multi-character alphabet symbol
+T30           PASS    ε inside the alphabet
+T31           PASS    No states
+T32           PASS    Duplicate state names
+T33           PASS    Safety limit: no partial DFA is returned
+T34           PASS    Bounded check enforces the budget before generating strings
+B-contains01  PASS    Bounded DFA vs path-search oracle: Contains “01” (M1 example)
+S-contains01-1PASS    Preset: Contains “01” (M1 example)
+S-contains01-2PASS    Preset: Contains “01” (M1 example)
+S-contains01-3PASS    Preset: Contains “01” (M1 example)
+B-ends01      PASS    Bounded DFA vs path-search oracle: Ends with 01
+S-ends01-1    PASS    Preset: Ends with 01
+S-ends01-2    PASS    Preset: Ends with 01
+S-ends01-3    PASS    Preset: Ends with 01
+B-dead        PASS    Bounded DFA vs path-search oracle: Reachable dead state (starts with …
+S-dead-1      PASS    Preset: Reachable dead state (starts with 0)
+S-dead-2      PASS    Preset: Reachable dead state (starts with 0)
+S-dead-3      PASS    Preset: Reachable dead state (starts with 0)
+B-eps-cycle   PASS    Bounded DFA vs path-search oracle: ε-chain with a cycle
+S-eps-cycle-1 PASS    Preset: ε-chain with a cycle
+S-eps-cycle-2 PASS    Preset: ε-chain with a cycle
+S-eps-cycle-3 PASS    Preset: ε-chain with a cycle
+B-eps-accept  PASS    Bounded DFA vs path-search oracle: Start closure is accepting (accept…
+S-eps-accept-1PASS    Preset: Start closure is accepting (accepts ε)
+S-eps-accept-2PASS    Preset: Start closure is accepting (accepts ε)
+S-eps-accept-3PASS    Preset: Start closure is accepting (accepts ε)
+B-unreachable PASS    Bounded DFA vs path-search oracle: NFA with an unreachable state
+S-unreachable-1PASS    Preset: NFA with an unreachable state
+S-unreachable-2PASS    Preset: NFA with an unreachable state
+S-unreachable-3PASS    Preset: NFA with an unreachable state
+B-third-last  PASS    Bounded DFA vs path-search oracle: Worst-case growth: 3rd symbol from…
+S-third-last-1PASS    Preset: Worst-case growth: 3rd symbol from the end is 1
+S-third-last-2PASS    Preset: Worst-case growth: 3rd symbol from the end is 1
+S-third-last-3PASS    Preset: Worst-case growth: 3rd symbol from the end is 1
+B-even-ab     PASS    Bounded DFA vs path-search oracle: Even number of a and even number o…
+S-even-ab-1   PASS    Preset: Even number of a and even number of b
+S-even-ab-2   PASS    Preset: Even number of a and even number of b
+S-even-ab-3   PASS    Preset: Even number of a and even number of b
+B-even-0      PASS    Bounded DFA vs path-search oracle: Even number of 0s
+S-even-0-1    PASS    Preset: Even number of 0s
+S-even-0-2    PASS    Preset: Even number of 0s
+S-even-0-3    PASS    Preset: Even number of 0s
+
+72/72 passed, 0 failed

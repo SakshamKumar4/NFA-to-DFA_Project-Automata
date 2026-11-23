@@ -1,0 +1,3 @@
+{ "name": "automata-studio-nfa-to-dfa", "version": "2.0.0", "private": true,
+  "description": "NFA / epsilon-NFA to DFA subset construction (CSET302 Milestone 2). No dependencies.",
+  "scripts": { "test": "node tests/run-tests.js", "start": "python3 -m http.server 8000" } }

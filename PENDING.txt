@@ -1,0 +1,1 @@
+Screenshots pending: capture in a real browser: (1) Contains 01 conversion, (2) step-through trace, (3) dead-state preset, (4) epsilon-cycle preset, (5) automated test table.
