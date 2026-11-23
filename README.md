@@ -1,4 +1,4 @@
-# Automata Studio – NFA / ε-NFA to DFA (CSET302, Milestone 2)
+# Automata Studio – NFA / ε-NFA to DFA (CSET302)
 Group ID: `[GROUP-ID]` · Members: `[names and roll numbers]` · Faculty: `[name]`
 
 ## Overview
